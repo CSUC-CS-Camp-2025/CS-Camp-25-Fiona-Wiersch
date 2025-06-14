@@ -1,17 +1,19 @@
-.container
+.grid-container
 {
     display: grid;
     grid-template-columns: auto;
     gap:10px;
     padding: 10px;
-    background-color: blueviolet;
+    background-color: rgb(247, 255, 241);
 }
 
 .item
 {
-    background-color: goldenrod;
-    color: aqua;
+    background-color: rgb(205, 243, 183);
+    color: rgb(55, 41, 14);
+    font-family: fantasy;
     padding: 20px;
     text-align: center;
     font-size: 16px;
 }
+
