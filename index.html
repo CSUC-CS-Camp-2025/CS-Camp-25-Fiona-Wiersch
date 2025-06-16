@@ -7,9 +7,13 @@
     <body style="background-color: rgb(182, 222, 182);">
         <header>
             <link rel="stylesheet" href="styles.css">
-            <h1>Fiona Wiersch</h1>
-            <h2>Green</h2>
-            <p>this is a pargggggggggggggggGaph</p>
+            <h1>1Fiona Wiersch</h1>
+            <h2>2Green</h2>
+            <h3>3</h3>
+            <h4>4</h4>
+            <h5>5</h5>
+            <h6>6</h6>
+            <p>this is a pargggggggggggggggggggggggggGaph<br>this table is in the header</p>
             <div>
                 <div class="grid-container">
                 <div class="item">1</div> 
@@ -20,17 +24,22 @@
             </div>
         </header>
         <main>
+            <p>this table is in main</p>
             <div>
                 <div class="flex-container">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
-                <div class="item">5</div>
-            </div>
+                <div class="item" style="order:5">1</div> <!--stuff said in flex-container div overwrites item, but nonspecified in div then item-->
+                <div style="order:4">2</div>
+                <div style="order:3;">3</div>
+                <div style="order:1;">4</div>
+                <div style="order:2;"><img src="https://pbs.twimg.com/media/FTtuLQEXwAEEnWI.jpg:large" style="width: auto; height: 40px; "     alt="txt for image?"></div>
+            </div> 
+            <!--
+            order=place--make sure all are assigned a spot
+            flex-shrink
+            -->
         </main>
         <figure>
-            <img src="https://pbs.twimg.com/media/FTtuLQEXwAEEnWI.jpg:large" style="width: 100px;height: 50px;"     alt="txt for image?">
+            <img src="https://pbs.twimg.com/media/FTtuLQEXwAEEnWI.jpg:large" style="width: auto;height: 500px;" alt="txt for image?">
         </figure>
     </body>
 </html>

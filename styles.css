@@ -5,27 +5,33 @@ h1,h2
     font-family: fantasy;
 }
 
+body
+{
+    color: lightcoral;
+    text-align: center;
+}
+
 p
 {
     color: indianred;
-    font-size: 30px;
+    font-size: 18px;
     font-family: cursive;
 } /* color=txt color, font-size=font size, font-family=font */
 
 
 .grid-container
 {
-    display: grid;
+    display: grid; /*two dimentions*/
     grid-template-columns: 20% 30% 20% 10%;
-    grid-template-rows: 10% 20%;
-    gap:50px;
-    padding: 10px;
+    grid-template-rows: 40% 50%;
+    gap: 20px;
+    padding: 20px;
     background-color: rgb(247, 255, 241);
-} /* gap= padding=*/
+} /* gap=space btwn boxes padding=frame thickness*/
 
 .item
 {
-    background-color: rgb(205, 243, 183);
+    background-color: rgb(205, 243, 183); /* box color */
     color: rgb(212, 80, 28);
     font-family: fantasy;
     padding: 20px;
@@ -35,6 +41,28 @@ p
 
 .flex-container
 {
-    background-color: aqua;
+    display: flex; /*one dimention*/
+    justify-content: space-evenly; /*distribution*/
+    align-self: center; /*vertical alignment*/
+    height: auto; /*container height*/
+    width: 800px; /*container width--normally just squishes to left border so pair with margin:auto; to center the container*/
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(113, 141, 84); /*frame color--color behind boxes*/
+    flex-wrap: nowrap; /*wrap=wraps*/
+    flex-direction: row;
+    align-items: center; /*boxes horizontal alignment within the container
+    /*flex flow?*/
+}
+
+.flex-container > div {
+    color: rgb(255, 0, 0);
+    background-color: rgb(59, 78, 53);
+    width: 77px; /*box width*/
+    margin: 20px; /*frame thickness*/
+    padding: 10px;
+    text-align: center; 
+    line-height: 75px;
+    font-size: 30px;
 }
 
