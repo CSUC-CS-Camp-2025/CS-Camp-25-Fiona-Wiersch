@@ -5,6 +5,11 @@ h1,h2
     font-family: fantasy;
 }
 
+header
+{
+    text-align: center;
+}
+
 body
 {
     color: lightcoral;
