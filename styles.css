@@ -1,3 +1,9 @@
+
+h1
+{
+    font-size: 60px;
+    padding-top: 20px;
+}
 h1,h2
 { 
     color:lightcoral;
@@ -17,11 +23,20 @@ body
 
 p
 {
-    color: indianred;
+    color: brown;
     font-size: 18px;
     font-family: cursive;
     text-align: center;
 } /* color=txt color, font-size=font size, font-family=font */
+
+
+
+
+a:hover 
+{
+    text-decoration: underline;
+    color: aqua;
+}
 
 
 .grid-container
