@@ -1,5 +1,10 @@
+x = 25;
+y = 0;
+
 //This is where you implement your Event Listener.
 //Remember to use the element ids.
+
+const { createContext } = require("react");
 
 
 //run this to host site: php -S localhost:3006 -t ./
@@ -46,3 +51,19 @@ addEventListener("DOMContentLoaded", () => {
 
 
 })
+
+
+function setup() {
+    createCanvas(800,400);
+    let x = 25;
+    let y = 0;
+}
+
+function draw() {
+    background(255,0,255);
+    circle(x,y,25);
+    y += 1;
+    if(y>400-12.5) {
+        y=-12.5;
+    }
+}

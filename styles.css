@@ -6,7 +6,7 @@ h1
 }
 h1,h2
 { 
-    color:lightcoral;
+    color: lightcoral;
     text-align: center;
     font-family: fantasy;
 }
@@ -51,7 +51,7 @@ a:hover
 
 .item
 {
-    background-color: rgb(205, 243, 183); /* box color */
+    background-color: #cdf3b7; /* box color */
     color: rgb(212, 80, 28);
     font-family: fantasy;
     padding: 20px;
@@ -86,3 +86,13 @@ a:hover
     font-size: 30px;
 }
 
+
+h1 {
+  animation-name: greenToCoral;
+  animation-duration: 4s;
+}
+
+@keyframes greenToCoral {
+  from {color: rgb(182, 241, 182)}
+  to {color: lightcoral;}
+}
